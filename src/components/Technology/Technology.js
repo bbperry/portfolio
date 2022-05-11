@@ -1,19 +1,18 @@
 import React from 'react';
-import './Projects.css' 
+import './Technology.css' 
 import { Link } from 'react-router-dom'
 import { GrFacebook } from 'react-icons/gr'
 import { TiSocialInstagram } from 'react-icons/ti'
 import { MdEmail } from 'react-icons/md'
 
 
-function Projects() {
+function Technology() {
   
   return (
-    <div className='Projects-container'>
-        
-        
+    <div className=''>
+
     </div>
   );
 }
 
-export default Projects;
+export default Technology;

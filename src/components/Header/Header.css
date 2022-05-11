@@ -1,0 +1,95 @@
+:root {
+    /* colors */
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+}
+
+.nav-logo {
+    justify-self: start;
+    align-self: center;
+    padding-right: 2rem;
+}
+
+.nav-logo > a {
+    text-decoration: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+  padding-left: 50px;
+}
+
+.nav-bar {
+    display: flex;
+    gap: var(--gap, 1rem);
+    width: 100%;
+    flex-grow: 0;
+    justify-content: center;
+    position: sticky;
+}
+
+.nav-list {
+    display:flex;
+    margin-right: auto;
+    margin-left: auto;
+    gap: var(--gap, 1rem);
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    justify-content: start;
+}
+
+.nav-links,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+/* .nav-list > li {
+    display: inline-flex;
+    justify-content: space-around;
+    gap: var(--gap, 1rem);
+    border: solid green 2px;
+} */
+
+.primary-navigation {
+    --gap: 8rem;
+    --underline-gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.primary-navigation a {
+    text-decoration: none;
+}
+
+.primary-navigation a > span {
+    font-weight: 700;
+    margin-right: .5em;
+}
+
+.underline-indicators > * {
+    cursor: pointer;
+    padding: var(--underline-gap, 1rem) 0;
+    border: 0;
+    border-bottom: .2rem solid hsl( var(--clr-dark) / 0 );
+}
+
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
+    border-color: hsl( var(--clr-dark) / .5);
+}
+
+.underline-indicators > .active,
+.underline-indicators > [aria-selected="true"] {
+    color: hsl( var(--clr-dark) / 1);
+    border-color: hsl( var(--clr-dark) / 1); 
+}
